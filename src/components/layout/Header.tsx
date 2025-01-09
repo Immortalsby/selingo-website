@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from '@/lib/i18n/context'
-import { Locale, locales, localeNames, type TranslationKey } from '@/i18n/config'
+import { locales, localeNames, type TranslationKey } from '@/i18n/config'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { GlobeAltIcon } from '@heroicons/react/24/outline'

@@ -4,12 +4,17 @@ import Benefits from '@/components/sel/Benefits'
 import Framework from '@/components/sel/Framework'
 import CTA from '@/components/sel/CTA'
 import PageTransition from '@/components/layout/PageTransition'
-import Seo from '@/components/common/Seo'
+import { generateMetadata } from '@/components/common/Seo'
+
+// 导出 metadata 配置
+export const metadata = generateMetadata({ 
+  page: 'sel',
+  locale: 'zh'
+})
 
 export default function SELPage() {
   return (
     <PageTransition>
-      <Seo page="sel" />
       <SELHero />
       <Intro />
       <Benefits />

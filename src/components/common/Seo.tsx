@@ -34,6 +34,7 @@ export default function Seo({ page }: SeoProps) {
       <link rel="alternate" hrefLang="en" href={`https://selingo.ai/en${page === 'home' ? '' : `/${page}`}`} />
       <link rel="alternate" hrefLang="fr" href={`https://selingo.ai/fr${page === 'home' ? '' : `/${page}`}`} />
       <link rel="alternate" hrefLang="x-default" href={`https://selingo.ai${page === 'home' ? '' : `/${page}`}`} />
+      <link rel="canonical" href="https://selingo.ai" />
 
       {/* Additional Meta Tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
